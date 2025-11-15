@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+  <title>Register</title>
+</head>
+<body>
+  <div class="login-box-wrapper">
+    <h5 class="register-text">Register</h5>
+
+    
+    <input id="nameInput" class="input-box-wrapper" type="text" placeholder="Enter your real name" />
+    <input id="passInput" class="input-box-wrapper" type="text" placeholder="Enter the passcode" />
+
+  
+    <button id="Submit" class="register-button">Submit</button>
+
+    <h1 class="comment-text">
+      Please enter your real name in the input box. This is a temporary website made by Raven Diaz
+    </h1>
+  </div>
+
+  <script src="{{ url_for('static', filename='scripts/loginHandler.js') }}"></script>
+</body>
+</html>
